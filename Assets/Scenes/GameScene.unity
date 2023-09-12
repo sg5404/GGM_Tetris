@@ -233,6 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197897482}
   - component: {fileID: 197897483}
+  - component: {fileID: 197897484}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -267,6 +268,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropIntervalRate: 0.8
+  GameOverPanel: {fileID: 310471629}
+  RestartButton: {fileID: 473377366}
+  ScoreText: {fileID: 851994632}
+--- !u!114 &197897484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197897481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d888f0a880ca99144a34a53dec315b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostShape: {fileID: 0}
+  ghostColor: {r: 1, g: 1, b: 1, a: 0.2}
 --- !u!1 &285455690
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +336,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &310471629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8315684475972260816, guid: f70285868005e493789871e102b7fcb3, type: 3}
+  m_PrefabInstance: {fileID: 634210721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &473377366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4682255312816457754, guid: f70285868005e493789871e102b7fcb3, type: 3}
+  m_PrefabInstance: {fileID: 634210721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &634210721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -602,6 +636,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682132783}
   m_CullTransparentMesh: 1
+--- !u!114 &851994632 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1960801729557331643, guid: f70285868005e493789871e102b7fcb3, type: 3}
+  m_PrefabInstance: {fileID: 634210721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1125039647
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +791,7 @@ MonoBehaviour:
   blankSpriteHeight: 30
   blankSpriteWidth: 10
   blankHeader: 8
+  GhostBlock: {fileID: 387254653168140625, guid: e8a76fecd0c21b2418f644a7a5125ff7, type: 3}
 --- !u!1 &1694693257
 GameObject:
   m_ObjectHideFlags: 0

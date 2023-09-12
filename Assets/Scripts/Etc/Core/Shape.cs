@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shape : MonoBehaviour
 {
     public bool bCanRotate = true;
+    public bool CanMove = true;
 
     private void Start()
     {
@@ -20,22 +21,26 @@ public class Shape : MonoBehaviour
 
     public void MoveLeft()
     {
-        Move(Vector3.left);
+        if(CanMove)
+            Move(Vector3.left);
     }
 
     public void MoveRight()
     {
-        Move(Vector3.right);
+        if (CanMove)
+            Move(Vector3.right);
     }
 
     public void MoveUp()
     {
-        Move(Vector3.up);
+        if (CanMove)
+            Move(Vector3.up);
     }
 
     public void MoveDown()
     {
-        Move(Vector3.down);
+        if (CanMove)
+            Move(Vector3.down);
     }
 
     //회전 함수들
